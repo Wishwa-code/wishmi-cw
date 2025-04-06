@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+        <product category = "outerwear">
+            <product_id>35</product_id>
+            <name>Dark Floral Silk Satin Midi Dress</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../assets/fashion/spring&amp;summer/dark-floral-silk-satin-midi-dress.jpg</image1>
+            <image2>../assets/fashion/spring&amp;summer/dark-floral-silk-satin-midi-dress.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>36</product_id>
+            <name>Brown Tweed Dress</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../assets/fashion/spring&amp;summer/brown-tweed-dress.jpg</image1>
+            <image2>../assets/fashion/spring&amp;summer/brown-tweed-dress.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>37</product_id>
+            <name>Floral Print Summer Dress</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../assets/fashion/spring&amp;summer/[Downloader.la]-67bafb419000e.jpg</image1>
+            <image2>../assets/fashion/spring&amp;summer/[Downloader.la]-67bafb419000e.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>38</product_id>
+            <name>Crimson Off Shoulder Midi Dress</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../assets/fashion/spring&amp;summer/[Downloader.la]-67b88d0a9255a.jpg</image1>
+            <image2>../assets/fashion/spring&amp;summer/[Downloader.la]-67b88d0a9255a.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>39</product_id>
+            <name>Elegant Evening Gown</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../assets/fashion/spring&amp;summer/[Downloader.la]-67c33aab468d6.jpg</image1>
+            <image2>../assets/fashion/spring&amp;summer/[Downloader.la]-67c33aab468d6.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>40</product_id>
+            <name>Beige Camisole Silk Top and Wrapped Midi Skirt</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../assets/fashion/spring&amp;summer/beige-camisole-silk-top-and-wrapped-midi-skirt.jpg</image1>
+            <image2>../assets/fashion/spring&amp;summer/beige-camisole-silk-top-and-wrapped-midi-skirt.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>41</product_id>
+            <name>Casual Summer Dress</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../assets/fashion/spring&amp;summer/[Downloader.la]-67b8bc562067d.jpg</image1>
+            <image2>../assets/fashion/spring&amp;summer/[Downloader.la]-67b8bc562067d.jpg</image2>
+        </product>
+</products>
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Wish Fashion House</title>
+		<link href="../css/styles.css" rel="stylesheet">
+		<link href="../css/infinite_scroll_list_styles.css" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Odibee+Sans&family=Ruthie&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+		<script src="../scripts/script.js"></script>
+	</head>
+	<body class="homepage">
+		<header>
+			<div id= "navbar-main">
+				<div class = "logos">
+					<a href = "index.html"><img src="../assets/logo52.jpg" id= "logo" alt="Logo Image"></a>
+				</div>
+				<div id="navbar">
+					<div class="nav_link">
+						<div class="dropdown">
+							<a href ="#categories.html" id="shop_button" class="nav_button">shop</a>
+							<div class="menus">
+								<ul class="dropdown_menu">
+									<h3>Shop By Category</h3>
+									<li><a href="#outerwear">Outerwear</a></li>
+									<li><a href="#jewelery">Jewelery</a></li>
+									<li><a href="#shoes">Shoes & Heels</a></li>
+									<li><a href="#bags">Bags</a></li>
+								</ul>
+								<ul class="dropdown_menu">
+									<h3>Collections</h3>
+									<li><a href="#outerwear">The Bold & The Blazer</a></li>
+									<li><a href="#jewelery">Beyond Basics</a></li>
+									<li><a href="#shoes">Chick Office Cut</a></li>
+									<li><a href="#bags">Spring & Summer</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="nav_link">
+						<a  id="shop_button" href ="#aboutus.html" class="nav_button">life</a>
+					</div>
+					
+				</div>
+				<div class="nav_link">
+					<a href = "#cart.html"><img src="../assets/shopping_cart.svg" id = "cart" class="nav_button" alt="Shopping Cart"></a>					
+				</div>
+			</div>
+			
+		</header>
+
+		<div class="banner">
+			<div class="slideshow">
+				<img src="../assets/beyondBasics1920x1080biggerfont.jpg" alt="Beyond Basics">
+				<img src="../assets/rebelLuxe.jpg" alt="Rebel luxe">
+				<img src="../assets/theBold&theBlazer.jpg" alt="The Bold & The Blazer">
+				<img src="../assets/blazer&thebold.jpg" alt="The Bold & The Blazer">
+				<img src="../assets/beyondBasics1920x1080biggerfont.jpg" alt="Beyond Basics">
+			</div>
+		</div>
+		<div id="collections-title">
+			<p>Collections</p>
+		</div>
+		<div id="collections-popup">Collections</div>
+		
+		<div class="collections">
+			<div id="collection">
+				<img src="../assets/[Downloader.la]-67bb0b08c793a.jpg" alt="Item">
+				<p>Beyond Basics</p>
+			</div>
+			<div id="collection">
+				<img src="../assets/chick_office_cut.jpg" alt="Item">
+				<p>Chick Office Cut</p>
+			</div>
+			
+			<div id="collection">
+				<img src="../assets/[Downloader.la]-67bb0c162029e.jpg" alt="Item">
+				<p>The Bold & The Blazer</p>
+			</div>
+			<div id="collection">
+				<img src="../assets/[Downloader.la]-67bb0e2618dfe.jpg" alt="Item">
+				<p>Spring & Summer</p>
+			</div>	
+		</div>
+		<br>
+		<br>
+		<h1>Start of xml loaded product list</h1>
+		<div class="product-list-container ">	
+			<div id="main_product_list">				
+			</div>
+			<div id="beyond_basics">				
+			</div>
+			<div id="chick_office_cut">				
+			</div>
+			<div id="the_bold_and_the_blazer">				
+			</div>
+			<div id="spring_and_summer">				
+			</div>
+		</div>
+		<h1>End of xml loaded product list</h1>
+		<br>
+		<div id="best_sellers">				
+			<div class="item">
+				<div class="item_img"  onclick="loadProductDetailsPage('37')">
+					<img src="../assets/fashion/spring&summer/[Downloader.la]-67bafb419000e.jpg" class="front_img" alt="Item">
+					<img src="../assets/fashion/spring&summer/[Downloader.la]-67bafb703dc37.jpg" class="back_img" alt="Item">
+				</div>
+				<div class="product_details">
+					<p class="product_name" >Monochrome Summer Midi Dress</p>
+					<p class="product_price" >Lkr. 9990</p>
+					<img src="../assets/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div>				
+			<div class="item">
+				<div class="item_img"  onclick="loadProductDetailsPage('6')">
+					<img src="../assets/fashion/coats/[Downloader.la]-67bae30b0fa0f.jpg" class="front_img" alt="Item">
+					<img src="../assets/fashion/coats/[Downloader.la]-67b8c5403b15d.jpg" class="back_img" alt="Item">
+				</div>
+				<div class="product_details">
+					<p class="product_name" >Full Length Pink Coat</p>
+					<p class="product_price" >Lkr. 29 990</p>
+					<img src="../assets/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div> 
+			<div class="item">
+				<div class="item_img"  onclick="loadProductDetailsPage('7')">
+					<img src="../assets/fashion/coats/[Downloader.la]-67ac4aa26e618.jpg" class="front_img" alt="Item">
+					<img src="../assets/fashion/coats/[Downloader.la]-67bae37b70b1a.jpg" class="back_img" alt="Item">
+				</div>
+				<div class="product_details">
+					<p class="product_name" >Full Length Orange Coat</p>
+					<p class="product_price" >Lkr. 19 990</p>
+					<img src="../assets/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div>
+
+		</div>
+		<div class="features">
+			<img src="../assets/securedPayments.jpg" id = "add_to_cart" alt="Add to Cart">
+			<img src="../assets/freeDelivery.jpg" id = "add_to_cart" alt="Add to Cart">
+			<img src="../assets/visitOurStore.jpg" id = "add_to_cart" alt="Add to Cart">
+			<img src="../assets/cashOnDelivery.jpg" id = "add_to_cart" alt="Add to Cart">
+		</div>
+		<footer>
+			<div id="top">
+				<div id="sitemap">
+					<h4>Site Map</h4>
+					<a href="index.html">Home</a>
+					<a href="#categories.html">Categories</a>
+					<a href="#aboutus.html">About Us</a>
+					<a href="#cart.html">Cart</a>
+				</div>
+				<div id="customer_care">
+					<h4>Customer Care</h4>
+					<a href = "#return&refunds">Return & Refunds</a>
+					<a href = "#shippingInfo">Shipping Info</a>
+					<a href = "#helpcenter">Help Center</a>
+					<a href = "#contactUs">contact Us</a>
+				</div>
+				<div id="socials">
+					<h4>Connect with Wish</h4>
+					<a href = "#insta"><img src ="../assets/instagram.png"></a>
+					<a href = "#youtube"><img src ="../assets/youtube.png"></a>
+					<a href = "#x"><img src ="../assets/twitter.png"></a>
+					<a href = "#facebook"><img src ="../assets/facebook.png"></a>
+				</div>
+				<div id="downloadapp">
+					<h4>Download the Wish App</h4>
+					<a href="#googleplay"><img src="../assets/googleplay1.png"></a>
+					<a href="#appstore"><img width="200"  src="../assets/appstore.png"></a>
+				</div>
+			</div>
+			<p id="copyright">&copy;Wish2025</p>
+			<br>
+			<br>
+		</footer>
+	</body>
+</html>
