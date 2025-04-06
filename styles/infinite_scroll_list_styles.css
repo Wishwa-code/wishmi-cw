@@ -5,30 +5,31 @@ body {
   }
   
 .product-list-container { 
-    width: 100%; /* Full width of the parent */
+	padding-top: 100px;
+    width: 100%; 
+	align-items: center;
+	justify-content: center;
+	display: grid;
+	background-color: white;
+
+	
 }
 
-#main_product_list {
+.collection-list {
     display: grid;
     grid-template: 900px / auto auto;
-    gap: 20px;
-    padding: 20px;
-    background-color: white;
+	width:fit-content ;
+	gap:200px;
 }
 
-#beyond_basics {
-    display: grid;
-    grid-template:  900px  / auto auto;
-    gap: 20px;
-    padding: 20px;
-}
+
 
 
 /**item styles**/
 .item {
 	display: flex;
 	flex-direction: column;
-	align-items: left;
+	align-items: center;
 	justify-content: space-between;
 	position: relative;
 	overflow: hidden;
@@ -43,7 +44,8 @@ body {
 	width: 100%;
 	aspect-ratio: 1 / 1; /* Ensures consistent height (optional but useful) */
 	cursor: pointer;
-	overflow: hidden;
+	overflow: hidden;	
+
 }
 
 
@@ -57,8 +59,11 @@ body {
 	height: 100%;
 	object-fit: cover;
 	transition: opacity 0.3s ease;
+	object-position: top;
+
 }
 
+/*?change the object fit values to change the position of image*/
 .back_img {
 	z-index: 1;
 	opacity: 0;
@@ -69,6 +74,8 @@ body {
 	height: 100%;
 	object-fit: cover;
 	transition: opacity 0.3s ease;
+	object-position: bottom;
+
 }
 
 .item_img:hover .front_img {
@@ -110,51 +117,6 @@ body {
 	height:450px;
 }
 
-/* .item  .product_details {
-	opacity:1;
-}
-.product_details #add_to_cart,
-.product_details .product_price,
-.product_details .product_name {
-	position:relative;
-	margin-top:0px;
-	opacity:1;
-	text-align:center;
-}
-
-
-.item .product_details  #add_to_cart{
-	margin-left:auto;
-	width:30px;
-	height:auto;
-}
-
-.item .item_img {
-	position:relative;
-}
-.item .item_img .front_img,
-.item .item_img .back_img {
-	/*display:block;
-	position:absolute;
-	width:320px;
-	height:400px;
-	transition: opacity 0.5s ease;
-}
-.item .item_img .back_img{
-	opacity:0;
-	transition:0.5s ease;
-}
-.item .item_img .front_img{
-	opacity:1;
-	
-}
-.item .item_img:hover .front_img{
-	opacity:0;
-	
-}
-.item .item_img:hover .back_img{
-	opacity:1;
-} */
 
 /**banner styles**/
 
@@ -205,4 +167,101 @@ body {
     pointer-events: auto;
   }
   
+  .collections-title-inside{
+	font-family: "Rubik Mono One", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 150px;
+	width:40vw;
+
+	word-break: break-word;     /* breaks long words at any character */
+	overflow-wrap: break-word;  /* ensures long words break inside containers */
+	white-space: normal;
+  }
+
   
+/**product page**/
+.product_details{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width:98%;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+#add_to_cart{
+	width:50px;
+}
+
+/* .product_page {
+	margin:0;
+}
+.product {
+	margin:10px;
+	font-family:Arial, sans-serif;
+	display:flex;
+	flex-direction:column;
+
+	border:30px solid #2e2e2e;
+	background-color:#2e2e2e;
+}
+.product .product_details .product1 {
+	flex:2;
+}
+.product .product_details.product_details .product1  #large_img img{
+	width:100%;
+	height:auto;
+}
+.product .product_details .product2 #lil_img img{
+	padding-left:20px;
+	width:300px;
+	height:auto;
+}
+.product .product_details {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.product #lil_img {
+	display:inline-block;
+}
+.product .product_details .product2  {
+	padding-left:0;
+	flex:3;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.product .product_details .product2 .details{
+	margin-left:20px;
+	margin-top:27px;
+	padding:0px 20px 20px 70px;
+	width:70%;
+	background-color:white;
+}
+
+.product .product_details .product2 #product_name {
+	text-align:center;
+	font-size:50px;
+}
+.product .product_details .product2 #price {
+	text-align:center;
+	font-size:30px;
+}
+.product2 .details .color-options {
+	padding-left:55px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.product2 .details.color-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}  */
