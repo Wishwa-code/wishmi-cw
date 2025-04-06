@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 	console.log('js file connected');
 
+	document.querySelectorAll(".cart_open_button").forEach(button => {
+		button.addEventListener("click", openComponent);
+	  });
+
 	// Create a new div element
 	// const helloWorldDiv = document.createElement('div');
 	// helloWorldDiv.textContent = 'Hello World';
