@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>Product</title>
+			<link href="../static/styles.css" rel="stylesheet">
+			<!--<script src="../static/script.js"></script>-->
+			<script>
+				document.addEventListener('DOMContentLoaded',function(){
+					const selectedId = localStorage.getItem('selectedProduct');
+					if (!selectedId){
+						document.getElementById('product-details').textContent = "No product selected";
+						return;
+					}
+
+					fetch('products.xml')
+						.then(response => response.text())
+						.then(data => {
+							const parser = new DOMParser();
+							const xml = parser.parseFromString(data,'application/xml');
+							const products = xml.getElementsByTagName('product');
+
+							for (let i = 0; i <products.length; i++) {
+								const id = products[i].getElementsByTagName('id')[0].textContent;
+								if (id === selectedId) {
+									const name = products[i].getElementsByTagName('name')[0].textContent;
+									const price = products[i].getElementsByTagName('price')[0].textContent;
+									const image1 = products[i].getElementsByTagName('image1')[0].textContent;
+									const image2 = products[i].getElementsByTagName('image2')[0].textContent;
+									const description = products[i].getElementsByTagName('description')[0].textContent;
+									
+
+									// Popuating the html structure with obtained data
+									document.querySelector('.product1 #large_img img').src = image1;
+									document.querySelector('.product1 #large_img img').alt = name;
+									document.getElementById('product_name').textContent = name;
+									document.getElementById('price').textContent = `Lkr ${price}`;
+
+
+									/*const container = document.getElementById('product-details');
+									container.innerHTML = `
+										<img src="${image}" alt="${name}" class="product-image-large" />
+										<h2>${name}</h2>
+										<p>${description}</p>
+										<p class="price">$${price}</p>
+										`;
+									break;*/
+									
+								}
+							}
+						})
+						.catch(error => {
+							console.error("Failed to load product details:",error)
+						})
+
+				});
+			</script>
+
+		</head>
+		<body class="product_page">
+			<header>
+				<div id= "navbar">
+					<a href = "index.html"><img src="../static/logo5.svg" id= "logo" alt="Logo Image"></a>
+					<div class="buttons1">
+						<a href ="#home.html">Home</a>
+						<a href ="#categories.html">Shop</a>
+						<!--<form action="/search" method="GET" class="search-bar">
+							<input type="text" name="q" placeholder="Search" required>
+							<button type="submit"><img src="../static/search.svg"></button>
+						</form>-->
+					</div>
+					<div class="buttons2">
+						<div class="search">
+							<img src="../static/search.svg" alt="search icon" class="search_icon">
+							<input type="text" class="search_bar" placeholder="Search..">
+						</div>						
+						<a href ="#aboutus.html">About Us</a>
+						<a href = "#cart.html"><img src="../static/shopping_cart.svg" id = "cart" alt="Shopping Cart"></a>
+						<a href="#signin.html">Sign Out</a>
+					</div>
+				</div>
+				<script><!--make change-->
+					const searchIcon = document.getElementById("searchIcon");
+					const searchBar = document.getElementById("searchBar");
+
+					searchIcon.addEventListener("mouseenter", () => {
+						searchBar.style.opacity = "1";
+						searchBar.style.transform = "scaleX(1)";
+					});
+
+					searchIcon.addEventListener("mouseleave", () => {
+						setTimeout(() => {
+							searchBar.style.opacity = "0";
+							searchBar.style.transform = "scaleX(0)";
+						}, 500); // Delays hiding slightly for a smoother effect
+					});
+
+					searchBar.addEventListener("mouseenter", () => {
+						searchBar.style.opacity = "1";
+						searchBar.style.transform = "scaleX(1)";
+					});
+
+					searchBar.addEventListener("mouseleave", () => {
+						searchBar.style.opacity = "0";
+						searchBar.style.transform = "scaleX(0)";
+					});
+				</script>
+			</header>
+
+			//	Loading product details dynamically
+			<!--<div id="product-details"class="product_details"></div>-->
+			<div class="product">
+				<div class="product_details">
+					<div class="product1">
+						<div id="large_img">
+							<img src="" alt="">
+						</div>					
+					</div>
+					<div class="product2">
+						<div id="lil_img">
+							<img src="" alt="">
+							<img src="" alt="">
+						</div>
+						<div class="details">
+							<p id="product_name"></P>
+							<p id="price"></p>
+
+							<!--<p id="color">Radio Button List of Colors</p>-->
+							<!--make change-->
+							<div class="color-options">
+								<label>Color :</label>
+								<span id="selected-color">Brown</span>
+								<br>
+								<label class="color-label">
+									<input type="radio" name="color" value="Brown" checked>
+									<span class="color-circle" style="background-color: brown;"></span>
+								</label>
+								
+								<label class="color-label">
+									<input type="radio" name="color" value="White">
+									<span class="color-circle" style="background-color: white; border: 1px solid #ccc;"></span>
+								</label>
+								
+								<label class="color-label">
+									<input type="radio" name="color" value="Green">
+									<span class="color-circle" style="background-color: green;"></span>
+								</label>
+								
+								<label class="color-label">
+									<input type="radio" name="color" value="Red">
+									<span class="color-circle" style="background-color: red;"></span>
+								</label>
+								
+								<label class="color-label">
+									<input type="radio" name="color" value="Blue">
+									<span class="color-circle" style="background-color: blue;"></span>
+								</label>
+							</div>
+							<br>
+							//<p id="size">Box List of Sizes</p>
+							<div class="size_options">
+								<label>Size :</label>
+								<span id="selected_size">XXL</span>
+								<br>
+								<label class="size_label">
+									<input type="radio" name="size" value="S">
+									<span class="size_box">S</span>
+								</label>
+								<label class="size_label">
+									<input type="radio" name="size" value="M">
+									<span class="size_box">M</span>
+								</label>
+								<label class="size_label">
+									<input type="radio" name="size" value="L">
+									<span class="size_box">L</span>
+								</label>
+								<label class="size_label">
+									<input type="radio" name="size" value="XL">
+									<span class="size_box">XL</span>
+								</label>
+								<label class="size_label">
+									<input type="radio" name="size" value="XXL">
+									<span class="size_box">XXL</span>
+								</label>
+								<label class="size_label">
+									<input type="radio" name="size" value="XXXL">
+									<span class="size_box">XXXL</span>
+								</label>
+							</div>
+							<br>
+							<div class="product_button_container">
+								<button>Add to Cart</button>
+								<button>Buy Now</button>
+							</div>
+						</div>				
+					</div>
+				</div>
+				<div class="product_reviews">
+					<div id="review_title"><p>Reviews</p></div>
+					<div class="review_box">
+						<div class="profile_details">
+							<div class="profile_pic">					
+								<img src="../static/profile.jpg" id="profile_pic" alt="profile image">						
+							</div>
+							<div class="profile_name">
+								<p>Profile Name</p>
+							</div>
+						</div>
+						<p>Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.</p>
+					</div>
+					<br>
+					<br>
+					<div class="review_box">
+						<div class="profile_details">
+							<div class="profile_pic">					
+								<img src="../static/profile.jpg" id="profile_pic" alt="profile image">						
+							</div>
+							<div class="profile_name">
+								<p>Profile Name</p>
+							</div>
+						</div>
+						<p>Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.</p>
+					</div>
+					<br>
+					<br>
+					<div class="review_box">
+						<div class="profile_details">
+							<div class="profile_pic">					
+								<img src="../static/profile.jpg" id="profile_pic" alt="profile image">						
+							</div>
+							<div class="profile_name">
+								<p>Profile Name</p>
+							</div>
+						</div>
+						<p>Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.</p>
+					</div>
+					<br>
+					<br>
+					<div class="review_box">
+						<div class="profile_details">
+							<div class="profile_pic">					
+								<img src="../static/profile.jpg" id="profile_pic" alt="profile image">						
+							</div>
+							<div class="profile_name">
+								<p>Profile Name</p>
+							</div>
+						</div>
+						<p>Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.</p>
+					</div>
+					<br>
+					<br>
+					<div class="review_box">
+						<div class="profile_details">
+							<div class="profile_pic">					
+								<img src="../static/profile.jpg" id="profile_pic" alt="profile image">						
+							</div>
+							<div class="profile_name">
+								<p>Profile Name</p>
+							</div>
+						</div>
+						<p>Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.</p>
+					</div>
+					<br>
+					<br>
+					<div class="review_box">
+						<div class="profile_details">
+							<div class="profile_pic">					
+								<img src="../static/profile.jpg" id="profile_pic" alt="profile image">						
+							</div>
+							<div class="profile_name">
+								<p>Profile Name</p>
+							</div>
+						</div>
+						<p>Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.</p>
+					</div>
+					<br>
+					<br>
+					<div class="review_box">
+						<div class="profile_details">
+							<div class="profile_pic">					
+								<img src="../static/profile.jpg" id="profile_pic" alt="profile image">						
+							</div>
+							<div class="profile_name">
+								<p>Profile Name</p>
+							</div>
+						</div>
+						<p>Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.
+						Here is the paragraph of review.Here is the paragraph of review.Here is the paragraph of review.</p>
+					</div>
+					<br>
+					<br>
+				</div>				
+			</div>
+		</body>
+	</html>

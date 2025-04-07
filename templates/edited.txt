@@ -1,0 +1,474 @@
+<h1>Favourite Categories</h1>
+			<div id="fav_categories">
+				<table>
+					<tr>
+						<td id="category">
+							<img src="../static/imagesmode.svg" alt="Item">
+							<p>Dresses,Skirts</p>
+						</td>
+						<td id="category">
+							<img src="../static/fashion/jew_easthetic2.jpg" alt="Item">
+							<p>Jewelery</p>
+						</td>
+						<td id="category">
+							<img src="../static/imagesmode.svg" alt="Item">
+							<p>Bags</p>
+						</td>
+						<td id="category">
+							<img src="../static/imagesmode.svg" alt="Item">
+							<p>Jeweleries Accessories</p>
+						</td>
+					</tr>
+					<tr>
+						<td id="category">
+							<img src="../static/imagesmode.svg" alt="Item">
+							<p>Category Name</p>
+						</td>
+						<td id="category">
+							<img src="../static/imagesmode.svg" alt="Item">
+							<p>Category Name</p>
+						</td>
+						<td id="category">
+							<img src="../static/imagesmode.svg" alt="Item">
+							<p>Category Name</p>
+						</td>
+						<td id="category">
+							<img src="../static/imagesmode.svg" alt="Item">
+							<p>Category Name</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			<h1>Favourite Categories</h1>
+			<div id="fav_categories">
+				<table>
+					<tr>
+						<td id="category">
+							<img src="../static/fashion/dress_easthetic2.jpg" alt="Item">
+							<p>Dresses,Skirts</p>
+						</td>
+						<td id="category">
+							<img src="../static/fashion/shoe_easthetic.jpg" alt="Item">
+							<p>Shoes, Heels</p>
+						</td>
+						<td id="category">
+							<img src="../static/fashion/bag_easthetic.jpg" alt="Item">
+							<p>Bags</p>
+						</td>
+						<td id="category">
+							<img src="../static/fashion/jew_easthetic3.jpg" alt="Item">
+							<p>Jeweleries, Accessories</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			
+<h1>Favourite Categories</h1>
+			<div id="fav_categories">
+				<div id="category">
+					<img src="../static/fashion/dress_easthetic2.jpg" alt="Item">
+					<p>Dresses,Skirts</p>
+				</div>
+				<div id="category">
+					<img src="../static/fashion/shoe_easthetic.jpg" alt="Item">
+					<p>Shoes, Heels</p>
+				</div>
+				<div id="category">
+					<img src="../static/fashion/bag_easthetic.jpg" alt="Item">
+					<p>Bags</p>
+				</div>
+				<div id="category">
+					<img src="../static/fashion/jew_easthetic3.jpg" alt="Item">
+					<p>Jeweleries, Accessories</p>
+				</div>
+			</div>
+			<br>
+			<br>
+			
+			
+/*earings*/
+<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac4480d5f31.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				
+				
+				/*white outfit*/
+				<div id="item">[Downloader.la]-67ac4824e2053
+					<img src="../static/fashion/[Downloader.la]-67ac4415706b4.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				
+	/*white tote bag*/
+	<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac45e572d61.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				
+	/*heel shoes*/
+	<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac459c85456.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				
+				\
+/*@font-face {
+	font-family:"Odibee_Sans";
+	src: url("../Odibee_Sans/OdibeeSans-Regular.ttf") format("truetype");
+}*/
+
+/*@font-face {
+	font-family:"Unna";
+	src: url("../Unna/Unna-Italic.ttf") format("truetype");
+}*/
+
+
+
+/* whole outer wear page before breaking into collections */
+
+/*<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>Outerwear</title>
+			<link href="../static/styles.css" rel="stylesheet">
+
+		</head>
+		<body class="outerwear_page">
+			<header>
+				<div id= "navbar">
+					<a href = "index.html"><img src="../static/logo5.svg" id= "logo" alt="Logo Image"></a>
+					<div class="buttons1">
+						<a href ="#home.html">Home</a>
+						<a href ="#categories.html">Shop</a>
+						<!--<form action="/search" method="GET" class="search-bar">
+							<input type="text" name="q" placeholder="Search" required>
+							<button type="submit"><img src="../static/search.svg"></button>
+						</form>-->
+					</div>
+					<div class="buttons2">
+						<div class="search">
+							<img src="../static/search.svg" alt="search icon" class="search_icon">
+							<input type="text" class="search_bar" placeholder="Search..">
+						</div>						
+						<a href ="#aboutus.html">About Us</a>
+						<a href = "#cart.html"><img src="../static/shopping_cart.svg" id = "cart" alt="Shopping Cart"></a>
+						<a href="#signin.html">Sign Out</a>
+					</div>
+				</div>
+				<script><!--make change-->
+					const searchIcon = document.getElementById("searchIcon");
+					const searchBar = document.getElementById("searchBar");
+
+					searchIcon.addEventListener("mouseenter", () => {
+						searchBar.style.opacity = "1";
+						searchBar.style.transform = "scaleX(1)";
+					});
+
+					searchIcon.addEventListener("mouseleave", () => {
+						setTimeout(() => {
+							searchBar.style.opacity = "0";
+							searchBar.style.transform = "scaleX(0)";
+						}, 500); // Delays hiding slightly for a smoother effect
+					});
+
+					searchBar.addEventListener("mouseenter", () => {
+						searchBar.style.opacity = "1";
+						searchBar.style.transform = "scaleX(1)";
+					});
+
+					searchBar.addEventListener("mouseleave", () => {
+						searchBar.style.opacity = "0";
+						searchBar.style.transform = "scaleX(0)";
+					});
+				</script>
+			</header>
+			<div id="best_sellers">
+				<!--<div id="item">
+					<img src="../static/fashion/istockphoto-695474472-1024x1024.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>-->
+				<!--<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac452dd8494.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>-->
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e4ee5d69e.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac456ba2871.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac4aa26e618.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div> 
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac490fec49b.jpg" alt="Item">
+					<p>Monochrome green party outfit</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div>
+			<div id="best_sellers">
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e84cd669f.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e772930e3.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e6e4767fd.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div> 
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e61320bb9.jpg" alt="Item">
+					<p>Monochrome green party outfit</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div>
+			<div id="best_sellers">
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e581b5e35.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e539c4e51.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e4ee5d69e.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div> 
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e4c11742a.jpg" alt="Item">
+					<p>Monochrome green party outfit</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div>
+			<div id="best_sellers">
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e45c6e154.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac452dd8494.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e4ee5d69e.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div> 
+				<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b0e2e6ce7e6.jpg" alt="Item">
+					<p>Monochrome green party outfit</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div>
+			<footer>
+				<div id="top">
+					<div id="sitemap">
+						<h4>Site Map</h4>
+						<a href="index.html">Home</a>
+						<a href="#categories.html">Categories</a>
+						<a href="#aboutus.html">About Us</a>
+						<a href="#cart.html">Cart</a>
+					</div>
+					<div id="customer_care">
+						<h4>Customer Care</h4>
+						<a href = "#return&refunds">Return & Refunds</a>
+						<a href = "#shippingInfo">Shipping Info</a>
+						<a href = "#helpcenter">Help Center</a>
+						<a href = "#contactUs">contact Us</a>
+					</div>
+					<div id="socials">
+						<h4>Connect with Wish</h4>
+						<a href = "#insta"><img src ="../static/instagram.png"></a>
+						<a href = "#youtube"><img src ="../static/youtube.png"></a>
+						<a href = "#x"><img src ="../static/twitter.png"></a>
+						<a href = "#facebook"><img src ="../static/facebook.png"></a>
+					</div>
+					<div id="downloadapp">
+						<h4>Download the Wish App</h4>
+						<a href="#googleplay"><img src="../static/googleplay1.png"></a>
+						<a href="#appstore"><img src="../static/appstore.png"></a>
+					</div>
+				</div>
+				<p id="copyright">&copy;Wish2025</p>
+				<br>
+				<br>
+			</footer>
+		</body>
+	</html>*/
+	
+	
+	<h1>What's Trending</h1>
+			<div id="best_sellers">
+				<!--<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac43af6a827.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>-->
+				<!--<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67b88d0a9255a.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>-->
+				<!--<div id="item">
+					<img src="../static/fashion/istockphoto-953192336-1024x1024.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>-->
+				<div id="item">
+					<img src="../static/fashion/spring&summer/[Downloader.la]-67b88d0a9255a.jpg" alt="Item">
+					<p>Crimson Off Shoulder Midi Dress</p>
+					<p>Lkr.5990</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/blazer/trench_coat.jpg" alt="Item">
+					<p>Beige Leathe Trench Coat</p>
+					<p>Lkr. 4990</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/spring&summer/[Downloader.la]-67b8bc562067d.jpg" alt="Item">
+					<p>Black & Orange Floral Midi Dress</p>
+					<p>Lkr. 4990</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/blazer/[Downloader.la]-67ac44c1a6bc7.jpg" alt="Item">
+					<p>Beige Leather Blazer & Wide Leg Trousers</p>
+					<p>Lkr. 9990</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div>
+			<div id="best_sellers">
+				<!--<div id="item">
+					<img src="../static/fashion/istockphoto-695474472-1024x1024.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>-->
+				<!--<div id="item">
+					<img src="../static/fashion/[Downloader.la]-67ac452dd8494.jpg" alt="Item">
+					<p>Item Name</p>
+					<p>Item Price</p>
+					<p>Rating</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>-->
+				<div id="item">
+					<img src="../static/fashion/spring&summer/[Downloader.la]-67bafb419000e.jpg" alt="Item">
+					<p>Monochrome Summer Midi Dress</p>
+					<p>Lkr. 9990</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>				
+				<div id="item">
+					<img src="../static/fashion/coats/[Downloader.la]-67bae30b0fa0f.jpg" alt="Item">
+					<p>Full Length Pink Coat</p>
+					<p>Lkr. 9990</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div> 
+				<div id="item">
+					<img src="../static/fashion/coats/[Downloader.la]-67ac4aa26e618.jpg" alt="Item">
+					<p>Full Length Orange Coat</p>
+					<p>Lkr. 9990</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+				<div id="item">
+					<img src="../static/fashion/beyondBasic/[Downloader.la]-67ac490fec49b.jpg" alt="Item">
+					<p>Monochrome green party outfit</p>
+					<p>Item Price</p>
+					<img src="../static/add_shopping_cart.svg" id = "add_to_cart" alt="Add to Cart">
+				</div>
+			</div>
+			<div class="features">
+				<img src="../static/securedPayments.jpg" id = "add_to_cart" alt="Add to Cart">
+				<img src="../static/freeDelivery.jpg" id = "add_to_cart" alt="Add to Cart">
+				<img src="../static/visitOurStore.jpg" id = "add_to_cart" alt="Add to Cart">
+				<img src="../static/cashOnDelivery.jpg" id = "add_to_cart" alt="Add to Cart">
+			</div>
+	
+	change the search bar
+	add an icon for profile page
+	change the form and take it to a new page
+	take about us to the middle
+	
+	
+	
+	

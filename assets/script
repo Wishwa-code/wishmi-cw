@@ -1,0 +1,26 @@
+<script>
+	//	Home Page Slideshow
+	
+	let slideNo = 1;		//	Slideshow starts with the 1st slide
+	slideShow(slideNo);		//	Calling the function to display the slideshow
+	
+	function slideShow() {
+		let i;
+		let slides = document.getElementByClassName("slideshow");		//	Catches all elements of the class from the html
+		
+		//	Hiding all the slides
+		for (i = 0; i < slides.length;i++){
+			slides[i].style.display = "none";		//	Setting style.display property of each element to none to hide them
+		}
+		slideNo++;									//	Moving to the next slide
+		
+		if(slideNo > slides.length) {				//	Moving back to the first slide when the slideNo exceeds the no of slides
+			slideNo = 1
+		}
+		
+		slides[slideNo - 1].style.display = "block";		//	Making the current slide visible
+		setTimeout(slideShow, 1500);						//	Calling the function automatically every 1.5 seconds, changing image every 1.5 seconds, runs continously
+		
+	}
+	
+</script>

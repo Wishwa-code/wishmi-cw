@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <collection name = "Beyond Basics">
+        <product category = "outerwear">
+            <product_id>1</product_id>
+            <name>Crimson Off Shoulder Midi Dress</name>
+            <price>Lkr.5990</price>
+            <rating>****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67b88d0a9255a.jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67b88cebeedad.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>2</product_id>
+            <name>Beige Leathe Trench Coat</name>
+            <price>Lkr.4990</price>
+            <rating>***</rating>
+            <image1>../static/fashion/blazer/trench_coat.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67b88c5392b74.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>3</product_id>
+            <name>Black & Orange Floral Midi Dress</name>
+            <price>Lkr.4990</price>
+            <rating>****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67b8bc562067d.jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67b8bcf0a707d.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>9</product_id>
+            <name>Beige Crop Top and Shorts</name>
+            <price>Lkr.29 900</price>
+            <rating>****</rating>
+            <image1>../static/fashion/beyondBasic/beige_crop_top_and_shorts.jpg</image1>
+            <image2>../static/fashion/beyondBasic/beige_crop_top_and_shorts.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>8</product_id>
+            <name>Monochrome green party outfit</name>
+            <price>Lkr.5990</price>
+            <rating>****</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67b0e772930e3.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67b0e772930e3.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>14</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/beyondBasic/vintage-top.jpg</image1>
+            <image2>../static/fashion/beyondBasic/vintage-top.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>5</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>****</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67b0e4ee5d69e.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67b0e4ee5d69e.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>15</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67c3540178db0.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67c3540178db0.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>16</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67c3512b82411.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67c3512b82411.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>17</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67c3630c9b2c8.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67c3630c9b2c8.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>18</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67c34f52682d7.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67c34f52682d7.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>19</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67c361a304160.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67c361a304160.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>20</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67ac490fec49b.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67ac490fec49b.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>21</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/beyondBasic/[Downloader.la]-67c362c7b5927.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67c362c7b5927.jpg</image2>
+        </product>
+    </collection>
+    <collection name = "Chick Office Cut">     
+        <product category = "outerwear">
+            <product_id>42</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67bafd899dcaf.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67bafd899dcaf.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>43</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baf02530e08.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baf02530e08.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>44</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baef8e776f2.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baef8e776f2.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>45</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baeec8bf837.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baeec8bf837.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>46</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baee77c6de5.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baee77c6de5.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>47</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baee1e85d55.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baee1e85d55.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>48</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baed4dd6480.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baed4dd6480.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>49</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baecb44e20b.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baecb44e20b.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>50</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baec778acdb.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baec778acdb.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>51</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/cotton-black-shirt-grey-trousers.jpg</image1>
+            <image2>../static/fashion/office_wear/cotton-black-shirt-grey-trousers.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>52</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baeb7452dd0.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baeb7452dd0.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>53</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/office_wear/[Downloader.la]-67baeae858bd0.jpg</image1>
+            <image2>../static/fashion/office_wear/[Downloader.la]-67baeae858bd0.jpg</image2>
+        </product>
+    </collection>
+    <collection name = "The Bold and The Blazer">
+        <product category = "outerwear">
+            <product_id>13</product_id>
+            <name>Full Length Beige Coat</name>
+            <price>Lkr.29 990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/[Downloader.la]-67b8c909f23c4.jpg</image1>
+            <image2>../static/fashion/[Downloader.la]-67b8c909f23c4.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>6</product_id>
+            <name>Full Length Pink Coat</name>
+            <price>Lkr.29 990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/coats/[Downloader.la]-67bae30b0fa0f.jpg</image1>
+            <image2>../static/fashion/coats/[Downloader.la]-67b8c5403b15d.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>4</product_id>
+            <name>Beige Leather Blazer & Wide Leg Trousers</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67ac44c1a6bc7.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67ac44c1a6bc7.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>7</product_id>
+            <name>Full Length Orange Coat</name>
+            <price>Lkr.19 990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/coats/[Downloader.la]-67ac4aa26e618.jpg</image1>
+            <image2>../static/fashion/coats/[Downloader.la]-67bae37b70b1a.jpg</image2>
+        </product>       
+        <product category = "outerwear">
+            <product_id>22</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67c35f39a0178.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67c35f39a0178.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>23</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67bae8874dfe4.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67bae8874dfe4.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>24</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67c34befc4291.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67c34befc4291.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>25</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67bae7da56601.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67bae7da56601.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>26</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/blazer/trench_coat.jpg</image1>
+            <image2>../static/fashion/blazer/trench_coat.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>27</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67c35195e4ac6.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67c35195e4ac6.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>28</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67b88caad300c.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67b88caad300c.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>29</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>Rating</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67ac44c1a6bc7.jpg</image1>
+            <image2>../static/fashion/beyondBasic/[Downloader.la]-67c362c7b5927.jpg</image2>
+        </product>
+    </collection>
+    <collection name = "spring and summer">
+        
+        
+        <product category = "outerwear">
+            <product_id>11</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67ac44c1a6bc7.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67ac44c1a6bc7.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>12</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/blazer/[Downloader.la]-67ac44c1a6bc7.jpg</image1>
+            <image2>../static/fashion/blazer/[Downloader.la]-67ac44c1a6bc7.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>30</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/orange marble silk satin camisole dress.jpg</image1>
+            <image2>../static/fashion/spring&summer/orange marble silk satin camisole dress.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>31</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/black and orange midi dress with short puff sleeves.jpg</image1>
+            <image2>../static/fashion/spring&summer/black and orange midi dress with short puff sleeves.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>32</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67bafded62723 (1).jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67bafded62723 (1).jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>33</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67bafd47da0a9.jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67bafd47da0a9.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>34</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67bafcba7fb98.jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67bafcba7fb98.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>35</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/dark-floral-silk-satin-midi-dress.jpg</image1>
+            <image2>../static/fashion/spring&summer/dark-floral-silk-satin-midi-dress.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>36</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/brown-tweed-dress.jpg</image1>
+            <image2>../static/fashion/spring&summer/brown-tweed-dress.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>37</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67bafb419000e.jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67bafb419000e.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>38</product_id>
+            <name>Crimson Off Shoulder Midi Dress</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67b88d0a9255a.jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67b88d0a9255a.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>39</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67c33aab468d6.jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67c33aab468d6.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>40</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/beige-camisole-silk-top-and-wrapped-midi-skirt.jpg</image1>
+            <image2>../static/fashion/spring&summer/beige-camisole-silk-top-and-wrapped-midi-skirt.jpg</image2>
+        </product>
+        <product category = "outerwear">
+            <product_id>41</product_id>
+            <name>Item Name</name>
+            <price>Lkr.9990</price>
+            <rating>*****</rating>
+            <image1>../static/fashion/spring&summer/[Downloader.la]-67b8bc562067d.jpg</image1>
+            <image2>../static/fashion/spring&summer/[Downloader.la]-67b8bc562067d.jpg</image2>
+        </product>
+        
+    </collection>
+</products>
+
+
+
+<reviews>
+    <review>
+        <product_id></product_id>
+        <username></username>
+        <rating>*****</rating>
+        <review></review>
+    </review>
+
+</reviews>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>{%block title %}{%endblock%}</title>
+			<link href="../static/styles.css" rel="stylesheet">
+			
+		</head>
+		<body class="homepage">
+			<header>
+				<!--<div class="discount_bar">
+					<p>Get 10% off your 1st purchase</P>
+				</div>-->
+				<div id= "navbar">
+					<div class = "logos">
+						<a href = "index.html"><img src="../static/logo52.jpg" id= "logo" alt="Logo Image"></a>
+						<a href = "index.html"><p id = "site_name">wish</P></a>
+					</div>
+					<!--<a href = "index.html"></a>-->
+					<div class="buttons1">
+						<a href ="#home.html"id="home_button" class="nav_button">Home</a>
+						<div class="dropdown">
+							<a href ="#categories.html" id="shop_button" class="nav_button">Shop</a>
+							<div class="menus">
+								<ul class="dropdown_menu">
+									<h3>Shop By Category</h3>
+									<li><a href="#outerwear">Outerwear</a></li>
+									<li><a href="#jewelery">Jewelery</a></li>
+									<li><a href="#shoes">Shoes & Heels</a></li>
+									<li><a href="#bags">Bags</a></li>
+								</ul>
+								<ul class="dropdown_menu">
+									<h3>Collections</h3>
+									<li><a href="#outerwear">The Bold & The Blazer</a></li>
+									<li><a href="#jewelery">Beyond Basics</a></li>
+									<li><a href="#shoes">Chick Office Cut</a></li>
+									<li><a href="#bags">Spring & Summer</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--<form action="/search" method="GET" class="search-bar">
+							<input type="text" name="q" placeholder="Search" required>
+							<button type="submit"><img src="../static/search.svg"></button>
+						</form>-->
+					</div>
+					<div class="buttons2">
+						<div class="search">
+							<img src="../static/search.svg" alt="search icon" class="search_icon nav_button">
+							<input type="text" class="search_bar" placeholder="Search..">
+						</div>						
+						<a href ="#aboutus.html" class="nav_button">About Us</a>
+						<a href = "#cart.html"><img src="../static/shopping_cart.svg" id = "cart" class="nav_button" alt="Shopping Cart"></a>
+						<a href="#signin.html" class="nav_button">Sign Out</a>
+					</div>
+				</div>
+				<script><!--make change-->
+					const searchIcon = document.getElementById("searchIcon");
+					const searchBar = document.getElementById("searchBar");
+
+					searchIcon.addEventListener("mouseenter", () => {
+						searchBar.style.opacity = "1";
+						searchBar.style.transform = "scaleX(1)";
+					});
+
+					searchIcon.addEventListener("mouseleave", () => {
+						setTimeout(() => {
+							searchBar.style.opacity = "0";
+							searchBar.style.transform = "scaleX(0)";
+						}, 500); // Delays hiding slightly for a smoother effect
+					});
+
+					searchBar.addEventListener("mouseenter", () => {
+						searchBar.style.opacity = "1";
+						searchBar.style.transform = "scaleX(1)";
+					});
+
+					searchBar.addEventListener("mouseleave", () => {
+						searchBar.style.opacity = "0";
+						searchBar.style.transform = "scaleX(0)";
+					});
+				</script>	
+			</header>
