@@ -1,205 +1,153 @@
 <!DOCTYPE HTML>
-	<html>
-		<head>
-			<title>Cart</title>
-			<link href="../static/styles.css" rel="stylesheet">
-			<script src="../static/script.js"></script>
-			<script>
-				document.addEventListener("DOMContentLoaded",function(){
-					const form = document.querySelector(".checkout_form form");
-					form.addEventListener("submit",function(event){
-						event.preventDefault();
-
-						let error = [];
-
-						const name = document.getElementById("name").value.trim();
-						const address = document.getElementById("address").value.trim();
-						const tel = document.getElementById("tel").value.trim();
-						const email = document.getElementById("email").value.trim();
-						const shipping_method = document.querySelector("input[name='shipping_method']:checked");
-						const terms_container = document.getElementById("terms").checked;
-						const cardType = document.getElementById("cardType").value;
-						const expDate = document.getElementById("expDate").value.trim();
-						const cvv = document.getElementById("cvv").value.trim();
-						const cardName = document.getElementById("cardName").value.trim(); 
-						
-
-						//	Javascript Input Validation
-						if(name === "")error.push("Name is Required.");
-						if(address === "")error.push("Address is Required.");						
-						if(email === "")error.push("Email is Required.");
-						if(!shipping_method)error.push("Please Select a Shipping Method to Continue.");
-						if(!terms_container)error.push("Please Agree with Terms and Continue to continue.");
-						if(cardType === "")error.push("Card Type is Required.");
-						if(expDate === "")error.push("Expiration Date is Required.");						
-						if(cardName === "")error.push("Card Holder's Name is Required.");
-
-						if(tel === ""){
-							error.push("Phone Number is Required.");
-						}else if(!/^\d{10}$/.test(tel)){
-							error.push("Invalid Phone Number. Phone Number must be 10 digits.");
-						}
-
-						if(cvv === ""){
-							error.push("CVV Number is Required.");
-						}else if(!/^\d{3,4}$/.test(cvv)){
-							error.push("Invalid CVV Number. CVV Number must be 3 or 4 digits.");
-						}
-
-						if (error.length > 0) {
-							alert("ERROR:"+error.join("\n"));
-						} else {
-							alert("Order Placed Successfully. Thank You.")
-						}
-					});
-				})				
-
-					
-			</script>
-		</head>
-		<body class="whole_cart_page">
-		<header>
-			<div id= "navbar">
-				<div class = "logos">
-					<a href = "index.html"><img src="../static/logo52.jpg" id= "logo" alt="Logo Image"></a>
-					<a href = "index.html"><p id = "site_name"><p>wish</P></a>
-				</div>
-				<!--<a href = "index.html"></a>-->
-				<div class="buttons1">
-					<a href ="index.html"id="home_button" class="nav_button">Home</a>
-					<div class="dropdown">
-						<a href ="outerwear.html" id="shop_button" class="nav_button">Shop</a>
-						<div class="menus">
-							<ul class="dropdown_menu">
-								<h3>Shop By Category</h3>
-								<li><a href="outerwear.html">Outerwear</a></li>
-								<li><a href="jewlery.html">Jewelery</a></li>
-								<li><a href="shoes.html">Shoes & Heels</a></li>
-								<li><a href="bags.html">Bags</a></li>
-							</ul>
-							<ul class="dropdown_menu">
-								<h3>Collections</h3>
-								<li><a href="outerwear.html#bold_the_blazer_section">The Bold & The Blazer</a></li>
-								<li><a href="outerwear.html#beyond_basics_section">Beyond Basics</a></li>
-								<li><a href="outerwear.html#chick_office_cut_section">Chick Office Cut</a></li>
-								<li><a href="outerwear.html#pring_summer_section">Spring & Summer</a></li>
-							</ul>
-						</div>
-					</div>
-					
-				</div>
-				<div class="buttons2">												
-					<a href = "cart.html"><img src="../static/shopping_cart.svg" id = "cart" class="nav_button" alt="Shopping Cart"></a>
-				</div>
-		</div>
-		</header>
-            <div class="checkout_form">
-                <form>
-					<h3>Card Details</h3>
-                    <fieldset>
-						<div>
-							<input type="text" id="name" placeholder="Full Name" >
-						
-						</div>
-						<br>
-						<div>
-							<input type="text" id="address" placeholder="Address" >
-						</div>                    
-						<br>
-						<div>
-							<input type="tel" id="tel" placeholder="Phone Number" >
-						</div>
-						<br>
-						<div>
-							<input type="email" id="email" placeholder="Email">
-						</div>
-						<br>
-						<div class="shipping_method">
-							<div class="shipping">
-								<label for="standard_shipping">Standard Shipping</label>
-								<input type="radio" id="standard_shipping" name="shipping_method" value="standard_shipping" >
-							</div>
-							<div class="shipping">
-								<label for="express_shipping">Express Shopping</label>
-								<input type="radio" id="express_shipping" name="shipping_method" value="express_shipping" >
-							</div>
-						</div>
-						<br>
-						<div>
-							<textarea id="note" placeholder=" Additional Instructions"></textarea>
-						</div>
-						<br>
-						<div class="terms_container">
-							<label for="terms">I Agree to Terms and Conditions.</label>
-							<input type="checkbox" id="terms">
-						</div>
-					</fieldset>
-					<br>
-                    <h3>Card Details</h3>
-                    <fieldset>
-						<div>
-							<select id="cardType">
-								<option value="">Card Type</option>
-								<option value="visa">Visa</option>
-								<option value="mastercard">MasterCard</option>
-								<option value="american">American Express</option>
-							</select>
-						</div>                        
-						<br>
-						<div>
-							<input type="text" id ="expDate" placeholder="Expiration Date MM/YY">
-						</div>
-						<br>
-						<div>
-							<input type="text" id="cvv" placeholder="CVV">
-						</div>
-						<br>
-						<div>
-							<input type="text" id="cardName" placeholder="Cardholder's Name" >
-						</div>
-						<br>
-						<div>
-							<button type="submit" id="confirm">Confirm Order</button>
-						</div>
-						<br>
-                    </fieldset>
-					
-                </form>
-
+<html>
+  <head>
+    <title>Cart</title>
+    <link href="../styles/styles.css" rel="stylesheet">
+    <script src="../assets/checkout_script.js"></script>
+  </head>
+  <body class="whole_cart_page">
+  <header>
+    <div id= "navbar">
+      <div class = "logos">
+        <a href = "index.html"><img src="../assets/logo52.jpg" id= "logo" alt="Logo Image"></a>
+        <a href = "index.html"><p id = "site_name"><p>wish</P></a>
+      </div>
+      <!--<a href = "index.html"></a>-->
+      <div class="buttons1">
+        <a href ="index.html"id="home_button" class="nav_button">Home</a>
+        <div class="dropdown">
+          <a href ="outerwear.html" id="shop_button" class="nav_button">Shop</a>
+          <div class="menus">
+            <ul class="dropdown_menu">
+              <h3>Shop By Category</h3>
+              <li><a href="outerwear.html">Outerwear</a></li>
+              <li><a href="jewlery.html">Jewelery</a></li>
+              <li><a href="shoes.html">Shoes & Heels</a></li>
+              <li><a href="bags.html">Bags</a></li>
+            </ul>
+            <ul class="dropdown_menu">
+              <h3>Collections</h3>
+              <li><a href="outerwear.html#bold_the_blazer_section">The Bold & The Blazer</a></li>
+              <li><a href="outerwear.html#beyond_basics_section">Beyond Basics</a></li>
+              <li><a href="outerwear.html#chick_office_cut_section">Chick Office Cut</a></li>
+              <li><a href="outerwear.html#pring_summer_section">Spring & Summer</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="buttons2">                        
+        <a href = "cart.html"><img src="../assets/shopping_cart.svg" id = "cart" class="nav_button" alt="Shopping Cart"></a>
+      </div>
+  </div>
+  </header>
+      <div class="checkout_form">
+          <form>
+          <h3>Card Details</h3>
+              <fieldset>
+          <div>
+            <input type="text" id="name" placeholder="Full Name" >
+          
+          </div>
+          <br>
+          <div>
+            <input type="text" id="address" placeholder="Address" >
+          </div>                    
+          <br>
+          <div>
+            <input type="tel" id="tel" placeholder="Phone Number" >
+          </div>
+          <br>
+          <div>
+            <input type="email" id="email" placeholder="Email">
+          </div>
+          <br>
+          <div class="shipping_method">
+            <div class="shipping">
+              <label for="standard_shipping">Standard Shipping</label>
+              <input type="radio" id="standard_shipping" name="shipping_method" value="standard_shipping" >
             </div>
-		</div>
-		<footer>
-			<div id="top">
-				<div id="sitemap">
-					<h4>Site Map</h4>
-					<a href="index.html">Home</a>
-					<a href="categories.html#fav_categories">Categories</a>
-					<a href="#aboutus.html">About Us</a>
-					<a href="cart.html">Cart</a>
-				</div>
-				<div id="customer_care">
-					<h4>Customer Care</h4>
-					<a href = "#return&refunds">Return & Refunds</a>
-					<a href = "#shippingInfo">Shipping Info</a>
-					<a href = "#helpcenter">Help Center</a>
-					<a href = "#contactUs">contact Us</a>
-				</div>
-				<div id="socials">
-					<h4>Connect with Wish</h4>
-					<a href = "#insta"><img src ="../static/instagram.png"></a>
-					<a href = "#youtube"><img src ="../static/youtube.png"></a>
-					<a href = "#x"><img src ="../static/twitter.png"></a>
-					<a href = "#facebook"><img src ="../static/facebook.png"></a>
-				</div>
-				<div id="downloadapp">
-					<h4>Download the Wish App</h4>
-					<a href="#googleplay"><img src="../static/googleplay1.png"></a>
-					<a href="#appstore"><img src="../static/appstore.png"></a>
-				</div>
-			</div>
-			<p id="copyright">&copy;Wish2025</p>
-			<br>
-			<br>
-		</footer>
-		</body>
-	</html>
+            <div class="shipping">
+              <label for="express_shipping">Express Shopping</label>
+              <input type="radio" id="express_shipping" name="shipping_method" value="express_shipping" >
+            </div>
+          </div>
+          <br>
+          <div>
+            <textarea id="note" placeholder=" Additional Instructions"></textarea>
+          </div>
+          <br>
+          <div class="terms_container">
+            <label for="terms">I Agree to Terms and Conditions.</label>
+            <input type="checkbox" id="terms">
+          </div>
+        </fieldset>
+        <br>
+              <h3>Card Details</h3>
+              <fieldset>
+          <div>
+            <select id="cardType">
+              <option value="">Card Type</option>
+              <option value="visa">Visa</option>
+              <option value="mastercard">MasterCard</option>
+              <option value="american">American Express</option>
+            </select>
+          </div>                        
+          <br>
+          <div>
+            <input type="text" id ="expDate" placeholder="Expiration Date MM/YY">
+          </div>
+          <br>
+          <div>
+            <input type="text" id="cvv" placeholder="CVV">
+          </div>
+          <br>
+          <div>
+            <input type="text" id="cardName" placeholder="Cardholder's Name" >
+          </div>
+          <br>
+          <div>
+            <button type="submit" id="confirm">Confirm Order</button>
+          </div>
+          <br>
+              </fieldset>
+          
+          </form>
+
+      </div>
+  </div>
+  <footer>
+    <div id="top">
+      <div id="sitemap">
+        <h4>Site Map</h4>
+        <a href="index.html">Home</a>
+        <a href="categories.html#fav_categories">Categories</a>
+        <a href="#aboutus.html">About Us</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div id="customer_care">
+        <h4>Customer Care</h4>
+        <a href = "#return&refunds">Return & Refunds</a>
+        <a href = "#shippingInfo">Shipping Info</a>
+        <a href = "#helpcenter">Help Center</a>
+        <a href = "#contactUs">contact Us</a>
+      </div>
+      <div id="socials">
+        <h4>Connect with Wish</h4>
+        <a href = "#insta"><img src ="../assets/instagram.png"></a>
+        <a href = "#youtube"><img src ="../assets/youtube.png"></a>
+        <a href = "#x"><img src ="../assets/twitter.png"></a>
+        <a href = "#facebook"><img src ="../assets/facebook.png"></a>
+      </div>
+      <div id="downloadapp">
+        <h4>Download the Wish App</h4>
+        <a href="#googleplay"><img src="../assets/googleplay1.png"></a>
+        <a href="#appstore"><img src="../assets/appstore.png"></a>
+      </div>
+    </div>
+    <p id="copyright">&copy;Wish2025</p>
+    <br>
+    <br>
+  </footer>
+  </body>
+</html>
